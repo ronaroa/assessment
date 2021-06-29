@@ -51,13 +51,6 @@ assessmentButton.onclick = () => {
   script.setAttribute('src', 'https://platform.twitter.com/widgets.js');//リンク
   tweetDivided.appendChild(script);
 };
-//エンターキーを押した時にの処理をする
-userNameInput.onkeydown = event => {
-  if (event.key === 'Enter') {
-    assessmentButton.onclick();
-    // TODO ボタンのonclick() 処理を呼び出す
-  }
-};
 
 
 const answers = [
